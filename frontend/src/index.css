@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes sphereGlow {
+  0% {
+      box-shadow: 0 0 100px rgba(168, 85, 247, 0.8), 0 0 200px rgba(168, 85, 247, 0.4), inset 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+      box-shadow: 0 0 120px rgba(168, 85, 247, 1), 0 0 240px rgba(168, 85, 247, 0.6), inset 0 0 80px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+      opacity: 0.6;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1.1);
+  }
+}
